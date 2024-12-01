@@ -1,0 +1,93 @@
+.events-panel {
+    background-color: #1e1e1e;
+    width: 50%;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-container {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* Align items to the start of the container */
+}
+
+.event {
+    width: 90%;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* Add relative positioning */
+}
+
+.event span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.toggle-button {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    /* Use absolute positioning */
+    right: 30px;
+    /* Position 30px from the right */
+}
+
+.toggle-on {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #a2ca10;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+.toggle-off {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+
+
+.slider {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #999;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.subscribed.slider {
+    transform: translateX(100%);
+    /* Fully move the slider to the right */
+    background-color: #1e1e1e;
+    position: absolute;
+    right: 22px;
+}
